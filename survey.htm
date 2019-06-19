@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> Welcome to The Ramen Enthusiast </title>
+	<!--
+         The Ramen Enthusiast
+         Filename: survey.htm
+      
+         Author: Stephen Andrew Koertge  
+         Date: September 2, 2018    
+         Final Project Challenge Rough Draft 1
+      -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+	<script src="modernizr.custom.05819.js"></script>
+    <link rel="stylesheet" href="styles2.css">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet">
+	<link rel="shortcut icon" href="images/favicon.ico">
+  </head>
+  <body>
+   <div class="container">
+	<header>
+	  <h1> The Ramen Enthusiast </h1>
+	 
+	   <ul class="sitenav">
+		<li><a href="index.html">Home</a></li>
+		<li><a href="history.html">History of Ramen</a></li>
+		<li><a href="types.html">Types of Ramen</a></li>
+		<li><a href="making.html">How Ramen's Made</a></li>
+		<li><a href="recipe.html">Recipe Ratios</a></li>
+		<li><a href="survey.htm" class="active">Take our Survey</a></li>
+	   </ul>
+	  
+	</header>
+	</div>
+	<div class="paragraph">
+	 <form>
+		<p class="formtext">What types of ramen have you tried? (Check all that apply)</p>
+		<input type="checkbox" name="ramen1" value="shoyu"> Shoyu Ramen <br>
+		<input type="checkbox" name="ramen2" value="shio"> Shio Ramen <br>
+		<input type="checkbox" name="ramen3" value="miso"> Miso Ramen <br>
+		<input type="checkbox" name="ramen4" value="tonkotsu"> Tonkotsu Ramen <br>
+		
+		<p class="formtext">Of the types you've tried, which is your favorite?</p>
+		<input type="radio" name="favorite" value="shoyu" checked>Shoyu<br>
+		<input type="radio" name="favorite" value="shio">Shio<br>
+		<input type="radio" name="favorite" value="miso">Miso<br>
+		<input type="radio" name="favorite" value="tonkotsu">Tonkotsu<br>
+		
+		<p class="formtext">What is your favorite ramen topping? (Limit 30 characters)</p>
+		<input type="text" name="topping" value="" size="30" maxlength="30"></br>
+		
+		<p class="formtext">Have you ever tried making ramen at home?</p>
+		<input type="radio" name="homemade" value="yes">Yes<br>
+		<input type="radio" name="homemade" value="no">No<br>
+		
+		<p class="formtext">If you picked no, why not?</p>
+		<textarea name="reason" rows="5" cols="50" maxlength="250" value="" placeholder="Type explanation here (limit 250 characters)"></textarea><br>
+		<input type="submit" value="Submit">
+		<input type="reset">
+	 </form>
+	</div>
+	<footer>
+		<p>Stephen Andrew Koertge &#8226; skoertge@ivytech.edu &#8226; (123)456-7890</p>
+	</footer>
+   <script src="script.js"></script>
+  </body>
+</html>

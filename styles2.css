@@ -1,0 +1,230 @@
+/*
+	The Ramen Enthusiast Styles Page
+	Filename: styles2.css
+	
+	Author: Stephen Andrew Koertge
+	Date: November 1, 2018
+	Final Project Final Draft 1
+*/
+
+/* Reset Styles */
+article, div, body, footer, header, h2, h3, p, li, ul, ol, form, legend, label {
+	border:0;
+	margin:0;
+	padding:0;
+ }
+ 
+/* Navbar styles */
+ ul.sitenav {
+	display: block;
+	float: left;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #b2a953;
+ }
+ 
+ li a {
+	display: block;
+	color: #DDD;
+	padding: 8px 16px;
+	text-decoration: none;
+ }
+ 
+ li a:hover {
+	background-color: #877f3f;
+	color: #FFF;
+ }
+ 
+.active {
+	background-color: #DDD;
+	color: #000;
+ }
+ 
+ /* Main content styles */
+ 
+ h1 {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Kaushan Script', cursive;
+	background:#877f3f;
+	color: #FFF;
+ }
+ 
+ .title {
+	text-align: center;
+	font-weight: bold;
+	font-family: 'Roboto Condensed', sans-serif;
+	border: 3px solid black;
+ }
+ .content {
+	display: table;
+	clear: right;
+	width: 67%;
+	left: 205px;
+	padding: 5px;
+	border: 2px solid black;
+	margin: 0;
+	background-color: #baa134;
+ }
+ 
+ footer {
+	clear:both;
+	position: fixed bottom;
+	background-color: #877f3f;
+	color: #FFF;
+	text-align: center;
+ }
+ 
+ body {
+	 background-color:#e5dd97;
+ }
+ 
+ /* Form/survey styles */
+
+form {
+	clear: right;
+	float:left;
+}	
+ 
+.formtext {
+	font-weight: bold;
+	padding-left: 5px;
+	border-bottom: 2px solid black;
+	border-top: 2px solid black;
+}	
+
+ /* Main content style */
+ h3 {
+	font-weight: bold;
+	font-size: 1.3em;
+	text-align: center;
+ }
+ 
+ h4 {
+	 font-size: 1.4em;
+	 font-weight: bold;
+ }
+ 
+ ul li {
+	list-style-type: none; 
+ }
+ 
+ p {
+	font-family: 'Lora', serif;	
+ }
+ 
+ .centertext {
+	text-align: center; 
+ }
+ 
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}	
+
+/* slideshow styles */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 600px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #E2E2E2;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.porktext {
+  color: #000;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
